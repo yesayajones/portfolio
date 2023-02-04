@@ -22,7 +22,29 @@ const Footer = () => {
 					<LinkTitle>Call</LinkTitle>
 					<LinkItem href='tel:+44777777777'>+447-777-77777</LinkItem>
 				</LinkColumn>
+				<LinkColumn>
+					<LinkTitle>Email</LinkTitle>
+					<LinkItem href='mailto:nyesaya1@gmail.com'>
+						yesayajones@gmail.com
+					</LinkItem>
+				</LinkColumn>
 			</LinkList>
+			<SocialIconsContainer>
+				<CompanyContainer>
+					<Slogan> Building amazing websites one at a time </Slogan>
+				</CompanyContainer>
+				<SocialContainer>
+					<SocialIcons href='https://github.com'>
+						<AiFillGithub size='3rem' />
+					</SocialIcons>
+					<SocialIcons href='https://linkedin.com'>
+						<AiFillLinkedin size='3rem' />
+					</SocialIcons>
+					<SocialIcons href='https://instagram.com'>
+						<AiFillInstagram size='3rem' />
+					</SocialIcons>
+				</SocialContainer>
+			</SocialIconsContainer>
 		</FooterWrapper>
 	);
 };
