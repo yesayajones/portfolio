@@ -15,5 +15,8 @@
 		"react-icons": "^4.2.0",
 		"styled-components": "^5.3.6",
 		"styled-normalize": "^8.0.7"
+	},
+	"devDependencies": {
+		"@wixc3/react-board": "^2.1.3"
 	}
 }
