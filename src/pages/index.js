@@ -1,4 +1,5 @@
 //Import necessary components
+import Head from 'next/head';
 import Acomplishments from '../components/Acomplishments/Acomplishments';
 import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation';
 import Hero from '../components/Hero/Hero';
@@ -12,16 +13,24 @@ import { Section } from '../styles/GlobalComponents';
 //Defines a function component  Home that returns a Layout component with several child components.
 const Home = () => {
 	return (
-		<Layout>
-			<Section grid>
-				<Hero />
-				<BgAnimation />
-			</Section>
-			<Projects />
-			<Technologies />
-			<Timeline />
-			<Acomplishments />
-		</Layout>
+		<>
+			<Head>
+				<title>My Portfolio</title>
+				<meta name='description' content='My portfolio website' />
+				<link rel='icon' href='/favicon.ico' />
+			</Head>
+
+			<Layout>
+				<Section grid>
+					<Hero />
+					<BgAnimation />
+				</Section>
+				<Projects />
+				<Technologies />
+				<Timeline />
+				<Acomplishments />
+			</Layout>
+		</>
 	);
 };
 
