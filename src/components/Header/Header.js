@@ -25,7 +25,7 @@ const Header = () => (
 						marginBottom: '20;',
 					}}
 				>
-					<DiCssdeck size='3rem' /> <Span>Portfolio</Span>
+					<DiCssdeck color='black' size='3rem' /> <Span>Portfolio</Span>
 				</a>
 			</Link>
 		</Div1>
