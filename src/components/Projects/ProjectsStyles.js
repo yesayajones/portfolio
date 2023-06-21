@@ -1,18 +1,22 @@
 import styled from 'styled-components';
+import { projects } from '../../constants/constants';
 
 export const Img = styled.img`
 	width: 100%;
-	height: 100%;
+	height: 50%;
 	object-fit: cover;
 	overflow: hidden;
+	border-radius: 15px;
+	box-shadow: 10px 15px 30px #333;
 `;
 
 export const GridContainer = styled.section`
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-	padding: 3rem;
+	grid-template-rows: repeat(4, ${Math.sqrt(projects.length)});
+	padding: 3rem 0;
 	place-items: center;
-	column-gap: 2rem;
+	column-gap: 3rem;
 	row-gap: 3rem;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
@@ -22,10 +26,12 @@ export const GridContainer = styled.section`
 	}
 `;
 export const BlogCard = styled.div`
-	border-radius: 10px;
+	border-radius: 20px;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	text-align: center;
-	width: 400px;
+	width: 100%;
+	aspect-ratio: 3/4; /* Set the aspect ratio to 1:1 */
+	overflow: hidden; /* Hide any overflow */
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
 	}

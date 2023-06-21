@@ -1,8 +1,8 @@
 export default {
 	// Temp fonts
 	fonts: {
-		title: 'Space Grotesk, sans-serif',
-		main: 'Space Grotesk, sans-serif',
+		title: 'Haas Grot Text R Web,Helvetica Neue,Helvetica,Arial,sans-serif',
+		main: '"Haas Grot Text R Web","Helvetica Neue",Helvetica,Arial,sans-serif',
 	},
 	// Colors for layout
 	colors: {

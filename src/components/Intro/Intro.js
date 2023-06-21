@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ReactImage from 'react-image';
 import {
 	Section,
 	SectionText,
@@ -8,33 +9,33 @@ import {
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection, RightSection } from './IntroStyles';
 import { FaReact } from 'react-icons/fa';
-import profile from '../../assets/2.3.webp';
+// import profile from '/public/images/background.png';
 
-const Image = styled.img`
-	max-width: 100%;
-	height: auto;
-`;
+// const Image = styled.img`
+// 	max-width: 100%;
+// 	height: auto;
+// `;
 
-const Hero = (props) => (
+const Intro = (props) => (
 	<Section row nopadding>
 		<LeftSection>
 			<SectionTitle main center>
-				Welcome To <br />
-				My Personal Portfolio
+				Hi I'm <br />
+				Yesaya Jones
 			</SectionTitle>
 			<SectionText>
 				I am a front-end web developer with React experience based in Zimbabwe.
 				I offer different front-end development services.
 			</SectionText>
 			<Button onClick={() => (window.location = 'https://google.com')}>
-				Learn More
+				Hire Me
 			</Button>
 		</LeftSection>
 		<RightSection>
 			<FaReact size={100} color='#000' />
-			<Image src={profile} />
+			{/* <ReactImage src={profile} /> */}
 		</RightSection>
 	</Section>
 );
 
-export default Hero;
+export default Intro;

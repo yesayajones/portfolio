@@ -1,162 +1,118 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'tyled-components';
 
-export const CarouselContainer = styled.ul`
-	max-width: 1040px;
-	background: #fffff;
-	padding: 0rem;
-	list-style: none;
+export const TimelineContainer = styled.div`
 	display: flex;
-	justify-content: space-between;
-	/* overflow-x: hidden; */
-
-	margin-left: 32px;
-	&:first-of-type {
-		margin-left: 0px;
-	}
-
-	margin-bottom: 80px;
-
-	//remove scrollbar
-	scrollbar-width: none;
-	&::-webkit-scrollbar {
-		display: none;
-	}
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		overflow-x: scroll;
-		-webkit-overflow-scrolling: touch;
-		scroll-snap-type: x mandatory;
-		touch-action: pan-x;
-		justify-content: initial;
-		margin-bottom: 8px;
-	}
-`;
-export const CarouselMobileScrollNode = styled.div`
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		min-width: ${({ final }) => (final ? `120%;` : `min-content`)};
-	}
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
 `;
 
-export const CarouselItem = styled.div`
-	background: #ffffff;
-	border-radius: 3px;
-	max-width: 196px;
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		max-width: 124px;
-	}
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		margin-left: 32px;
-		min-width: 120px;
-		padding: 4px;
-		align-content: start;
-		scroll-snap-align: start;
-		border-radius: 3px;
-		overflow: visible;
-		position: relative;
-		height: fit-content;
-
-		${(props) =>
-			props.active === props.index ? `opacity: 1` : `opacity: 0.5`};
-	}
-`;
-
-export const CarouselItemTitle = styled.h4`
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 32px;
-	letter-spacing: 0.02em;
+export const TimelineItem = styled.div`
 	display: flex;
-	/* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
-	background: linear-gradient(
-		121.57deg,
-		#000000 18.77%,
-		rgba(0, 0, 0, 0.66) 60.15%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	margin-bottom: 8px;
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: 20px;
-		line-height: 28px;
-		margin-bottom: 4px;
-	}
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 16px;
-		line-height: 24px;
-	}
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2rem;
 `;
-export const CarouselItemImg = styled.svg`
-	margin-left: 21px;
-	-webkit-mask-image: linear-gradient(
-		to right,
-		rgba(0, 0, 0, 1),
-		rgba(0, 0, 0, 0)
-	);
+
+export const TimelineLine = styled.div`
+	position: relative;
 	width: 100%;
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		-webkit-mask-image: none;
-		margin-left: 16px;
-		overflow: visible;
-	}
+	height: 2px;
+	background-color: #ccc;
+	z-index: -1;
 `;
 
-export const CarouselItemText = styled.p`
-	font-size: 14px;
-	line-height: 22px;
-	letter-spacing: 0.02em;
-	color: black;
-	padding-right: 16px;
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: 12px;
-		line-height: 18px;
-		padding-right: 32px;
-	}
-	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 10px;
-		line-height: 16px;
-		padding-right: 0;
-	}
-`;
-export const CarouselButtons = styled.div`
-	width: 288px;
-
-	display: none;
-	visibility: hidden;
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		visibility: visible;
-		margin-bottom: 48px;
-	}
+export const TimelineBullet = styled.div`
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 0 0 2px #ccc;
+	z-index: 1;
 `;
 
-export const CarouselButton = styled.button`
-	box-sizing: border-box;
-	background: none;
-	padding: 4px;
+export const TimelineContent = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 1rem;
+`;
+
+export const TimelineTitle = styled.h3`
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+`;
+
+export const TimelineSubtitle = styled.p`
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+`;
+
+export const TimelineText = styled.p`
+	font-size: 1rem;
+	line-height: 1.5;
+	text-align: center;
+`;
+
+export const TimelineButton = styled.button`
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: #000;
 	border: none;
+	border-radius: 5px;
 	cursor: pointer;
-	margin-right: 4px;
-	opacity: ${(props) => (props.active === props.index ? `1` : `.33`)};
-	transform: ${(props) =>
-		props.active === props.index ? `scale(1.6)` : `scale(1)`};
+	transition: all 0.3s ease-in-out;
 
-	&:focus {
-		outline: none;
+	&:hover {
+		background-color: #fff;
+		color: #000;
 	}
 `;
 
-export const CarouselButtonDot = styled.div`
-	background-color: white;
-	border-radius: 10px;
-	margin: auto;
-	width: 3px;
-	height: 3px;
+export const TimelineLineActive = keyframes`
+  0% {
+    transform: translateX(-50%) scaleX(0);
+  }
+  100% {
+    transform: translateX(-50%) scaleX(1);
+  }
+`;
+
+export const TimelineLineInactive = keyframes`
+  0% {
+    transform: translateX(-50%) scaleX(1);
+  }
+  100% {
+    transform: translateX(-50%) scaleX(0);
+  }
+`;
+
+export const TimelineLineActiveStyle = styled.div`
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 2px;
+	background-color: #000;
+	transform-origin: center;
+	animation: ${TimelineLineActive} 1s ease-in-out forwards;
+`;
+
+export const TimelineLineInactiveStyle = styled.div`
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 2px;
+	background-color: #ccc;
+	transform-origin: center;
+	animation: ${TimelineLineInactive} 1s ease-in-out forwards;
 `;

@@ -23,10 +23,25 @@ export const Boxes = styled.div`
 `;
 
 export const Box = styled.div`
-	background: white !important;
+	background: linear-gradient(
+		to bottom right,
+		rgba(0, 0, 0, 0.8),
+		rgba(0, 0, 0, 0.4)
+	);
 	border-radius: 12px;
 	height: 144px;
 	padding: 24px;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+	transition: background 0.3s ease-in-out;
+
+	&:hover {
+		background: linear-gradient(
+			to bottom left,
+			rgba(0, 0, 0, 0.8),
+			rgba(0, 0, 0, 0.4)
+		);
+	}
+
 	@media ${(props) => props.theme.breakpoints.lg} {
 		height: 210px;
 	}
@@ -45,13 +60,14 @@ export const Box = styled.div`
 		}
 	}
 `;
+
 export const BoxNum = styled.h5`
 	font-style: normal;
 	font-weight: 600;
 	font-size: 36px;
 	line-height: 40px;
 	letter-spacing: 0.01em;
-	color: #000000;
+	color: white;
 	margin-bottom: 8px;
 
 	@media ${(props) => props.theme.breakpoints.md} {
@@ -70,7 +86,7 @@ export const BoxText = styled.p`
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.02em;
-	color: black !important;
+	color: white !important;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: 16px;
