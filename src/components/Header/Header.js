@@ -17,7 +17,7 @@ const Header = () => (
 	<Container>
 		<Div1>
 			<Link href='/'>
-				<a
+				{/* <a
 					style={{
 						display: 'flex',
 						alignItems: 'center',
@@ -26,11 +26,11 @@ const Header = () => (
 					}}
 				>
 					<DiCssdeck color='black' size='3rem' /> <Span>Portfolio</Span>
-				</a>
+				</a> */}
 			</Link>
 		</Div1>
 		<Div2>
-			<li>
+			{/* <li>
 				<Link href='#projects'>
 					<NavLink>Projects</NavLink>
 				</Link>
@@ -44,7 +44,7 @@ const Header = () => (
 				<Link href='#about'>
 					<NavLink>About</NavLink>
 				</Link>
-			</li>
+			</li> */}
 		</Div2>
 		<Div3>
 			<SocialIcons href='https://github.com'>
