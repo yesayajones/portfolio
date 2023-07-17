@@ -16,8 +16,8 @@ import {
 const Header = () => (
 	<Container>
 		<Div1>
-			<Link href='/'>
-				{/* <a
+			<Link href='/' passHref legacyBehavior>
+				<a
 					style={{
 						display: 'flex',
 						alignItems: 'center',
@@ -26,25 +26,25 @@ const Header = () => (
 					}}
 				>
 					<DiCssdeck color='black' size='3rem' /> <Span>Portfolio</Span>
-				</a> */}
+				</a>
 			</Link>
 		</Div1>
 		<Div2>
-			{/* <li>
-				<Link href='#projects'>
+			<li>
+				<Link href='#projects' passHref legacyBehavior>
 					<NavLink>Projects</NavLink>
 				</Link>
 			</li>
 			<li>
-				<Link href='#tech'>
+				<Link href='#tech' passHref legacyBehavior>
 					<NavLink>Technologies</NavLink>
 				</Link>
 			</li>
 			<li>
-				<Link href='#about'>
+				<Link href='#about' passHref legacyBehavior>
 					<NavLink>About</NavLink>
 				</Link>
-			</li> */}
+			</li>
 		</Div2>
 		<Div3>
 			<SocialIcons href='https://github.com'>
