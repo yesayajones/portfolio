@@ -16,20 +16,10 @@ import {
 const Header = () => (
 	<Container>
 		<Div1>
-			<Link href='/'>
-				<a
-					style={{
-						display: 'flex',
-						alignItems: 'center',
-						color: 'white',
-						marginBottom: '20;',
-					}}
-				>
-					<DiCssdeck size='3rem' /> <Span>Portfolio</Span>
-				</a>
-			</Link>
+			<DiCssdeck size='3rem' />
+			<Span>Portfolio</Span>
 		</Div1>
-		<Div2>
+		{/* <Div2>
 			<li>
 				<Link href='#projects'>
 					<NavLink>Projects</NavLink>
@@ -45,7 +35,7 @@ const Header = () => (
 					<NavLink>About</NavLink>
 				</Link>
 			</li>
-		</Div2>
+		</Div2> */}
 		<Div3>
 			<SocialIcons href='https://github.com'>
 				<AiFillGithub size='3rem' />
