@@ -11,51 +11,23 @@ import {
 	LeftSection,
 	RightSection,
 	Container,
-	Content,
-	LeftContent,
 	Title,
-	Text,
 	Name,
-	Jacob,
-	RightContent,
-	Buttonn,
-	ButtonText,
-	ButtonIcon,
-	Icon,
-	IconBackground,
-	IconImage,
-	IconImageGradient,
+	Description,
+	HireButton,
 } from './IntroStyles';
 import { FaReact } from 'react-icons/fa';
 
 const Intro = (props) => (
 	<Section row nopadding>
 		<LeftSection>
-			<LeftContent>
-				<Title>My name is</Title>
-				<Name>
-					Jacob
-					<br />
-					Jones...
-				</Name>
-				<Text>Product Designer</Text>
-				<Text>based in London</Text>
-			</LeftContent>
-			<RightContent>
-				<Buttonn>
-					<ButtonText>Let's talk</ButtonText>
-					<ButtonIcon>
-						<Icon>
-							<IconBackground />
-							<IconImage>
-								<IconImageGradient />
-							</IconImage>
-						</Icon>
-					</ButtonIcon>
-				</Buttonn>
-				<Text>+77 022 444 05 05</Text>
-				<Text>jacob360@gmail.com</Text>
-			</RightContent>
+			<Container>
+				<Title>Hi 👋,</Title>
+				<Name>My name is</Name>
+				<Description>Yesaya Jones</Description>
+				<Title>I build things for web</Title>
+				<HireButton>Hire Me</HireButton>
+			</Container>
 		</LeftSection>
 		<RightSection>
 			<div style={{ width: '100%', height: '100%', position: 'relative' }}>
