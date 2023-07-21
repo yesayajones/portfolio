@@ -16,7 +16,6 @@ import {
 const Header = () => (
 	<Container>
 		<Div1>
-<<<<<<< HEAD
 			<Link href='/' passHref legacyBehavior>
 				<a
 					style={{
@@ -29,10 +28,6 @@ const Header = () => (
 					<DiCssdeck color='#ff7067' size='3rem' /> <Span>Portfolio</Span>
 				</a>
 			</Link>
-=======
-			<DiCssdeck size='3rem' />
-			<Span>Portfolio</Span>
->>>>>>> ad639f667e1ac26e7076ce849196cfb786a577b2
 		</Div1>
 		{/* <Div2>
 			<li>
