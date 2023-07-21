@@ -25,7 +25,7 @@ const Header = () => (
 						marginBottom: '20;',
 					}}
 				>
-					<DiCssdeck color='black' size='3rem' /> <Span>Portfolio</Span>
+					<DiCssdeck color='#ff7067' size='3rem' /> <Span>Portfolio</Span>
 				</a>
 			</Link>
 		</Div1>
@@ -48,13 +48,13 @@ const Header = () => (
 		</Div2>
 		<Div3>
 			<SocialIcons href='https://github.com'>
-				<AiFillGithub size='3rem' />
+				<AiFillGithub color='#ff7067' size='3rem' />
 			</SocialIcons>
 			<SocialIcons href='https://linkedin.com'>
-				<AiFillLinkedin size='3rem' />
+				<AiFillLinkedin color='#ff7067' size='3rem' />
 			</SocialIcons>
 			<SocialIcons href='https://instagram.com'>
-				<AiFillInstagram size='3rem' />
+				<AiFillInstagram color='#ff7067' size='3rem' />
 			</SocialIcons>
 		</Div3>
 	</Container>

@@ -41,7 +41,8 @@ export const Container = styled.div`
 	justify-content: center;
 	align-items: left;
 	text-align: left;
-	padding-right: 50px;
+	padding: 50px 50px 0 0;
+	position: relative;
 `;
 
 export const Title = styled.span`
@@ -72,14 +73,23 @@ export const Description = styled.span`
 	word-wrap: break-word;
 `;
 
-export const HireButton = styled.span`
-	color: white !important;
-	background-color: black !important;
-	font-size: 20px;
-	font-family: 'Poppins';
-	font-weight: 300;
-	border-radius: 10px;
-	padding: 15px;
+//Button styling
+export const Button = styled.button`
+	background-color: #b86adf;
+	border: none;
+	border-radius: 30px;
 	width: 50%;
-	margin-top: 20px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 15% 2px 4px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		background-color: #3e8e41;
+	}
 `;

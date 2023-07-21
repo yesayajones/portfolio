@@ -6,15 +6,15 @@ import {
 	SectionText,
 	SectionTitle,
 } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
+// import Button from '../../styles/GlobalComponents/Button';
 import {
 	LeftSection,
 	RightSection,
 	Container,
 	Title,
 	Name,
+	Button,
 	Description,
-	HireButton,
 } from './IntroStyles';
 import { FaReact } from 'react-icons/fa';
 
@@ -26,7 +26,7 @@ const Intro = (props) => (
 				<Name>My name is</Name>
 				<Description>Yesaya Jones</Description>
 				<Title>I build things for web</Title>
-				<HireButton>Hire Me</HireButton>
+				<Button>Hire Me</Button>
 			</Container>
 		</LeftSection>
 		<RightSection>

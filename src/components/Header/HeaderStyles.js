@@ -62,7 +62,7 @@ export const NavLink = styled.a`
 	align-items: center;
 	height: 100%;
 	&:hover {
-		color: #fff;
+		color: #ff7067;
 		opacity: 1;
 		cursor: pointer;
 	}

@@ -4,6 +4,7 @@ import Acomplishments from '../components/Acomplishments/Acomplishments';
 import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation';
 import Hero from '../components/Hero/Hero';
 import Projects from '../components/Projects/Projects';
+import { Stack } from '../components/Stack/Stack';
 import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import Intro from '../components/Intro/Intro';
@@ -28,6 +29,7 @@ const Home = () => {
 					<BgAnimation />
 				</Section>
 				<Projects />
+				{/* <Stack /> */}
 				<Technologies />
 				<Timeline />
 				<Acomplishments />
