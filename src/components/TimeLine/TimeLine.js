@@ -1,7 +1,7 @@
 import React from "react";
 import { BoxWrapper, AboutMe, Group, Timeline, OverlapGroup, Rectangle, Ellipse, Div, Ellipse2, Ellipse3, TextWrapper, TextWrapper2, TextWrapper3, TextWrapper4, P, TextWrapper5, TextWrapper6, TextWrapper7, TextWrapper8 } from "./TimeLineStyles.js";
 
-export const Box = () => {
+const Box = () => {
   return (
     <BoxWrapper>
       <AboutMe>
@@ -41,3 +41,5 @@ export const Box = () => {
     </BoxWrapper>
   );
 };
+
+export default Box;
