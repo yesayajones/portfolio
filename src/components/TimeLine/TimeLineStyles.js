@@ -35,7 +35,7 @@ export const OverlapGroup = styled.div`
 `;
 
 export const Rectangle = styled.div`
-  background-color: #ffffff;
+  background-color: #000000;
   height: 12px;
   left: 15px;
   position: absolute;
@@ -44,7 +44,7 @@ export const Rectangle = styled.div`
 `;
 
 export const Ellipse = styled.div`
-  background-color: #ffffff;
+  background-color: #000000;
   border-radius: 16px;
   height: 32px;
   left: 0;
@@ -54,7 +54,7 @@ export const Ellipse = styled.div`
 `;
 
 export const Div = styled.div`
-  background-color: #ffffff;
+  background-color: #000000;
   border-radius: 16px;
   height: 32px;
   left: 424px;
@@ -64,7 +64,7 @@ export const Div = styled.div`
 `;
 
 export const Ellipse2 = styled.div`
-  background-color: #ffffff;
+  background-color: #000000;
   border-radius: 16px;
   height: 32px;
   left: 864px;
@@ -74,7 +74,7 @@ export const Ellipse2 = styled.div`
 `;
 
 export const Ellipse3 = styled.div`
-  background-color: #ffffff;
+  background-color: #000000;
   border-radius: 16px;
   height: 32px;
   left: 1288px;
@@ -84,7 +84,7 @@ export const Ellipse3 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  color: #ffffff;
+  color: #000000;
   font-family: "Poppins-SemiBold", Helvetica;
   font-size: 36px;
   font-weight: 600;
@@ -96,7 +96,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TextWrapper2 = styled.div`
-  color: #ffffff;
+  color: #000000;
   font-family: "Poppins-SemiBold", Helvetica;
   font-size: 36px;
   font-weight: 600;
@@ -108,7 +108,7 @@ export const TextWrapper2 = styled.div`
 `;
 
 export const TextWrapper3 = styled.div`
-  color: #ffffff;
+  color: #000000;
   font-family: "Poppins-SemiBold", Helvetica;
   font-size: 36px;
   font-weight: 600;
@@ -120,7 +120,7 @@ export const TextWrapper3 = styled.div`
 `;
 
 export const TextWrapper4 = styled.div`
-  color: #ffffff;
+  color: #000000;
   font-family: "Poppins-SemiBold", Helvetica;
   font-size: 36px;
   font-weight: 600;
@@ -132,7 +132,7 @@ export const TextWrapper4 = styled.div`
 `;
 
 export const P = styled.p`
-  color: #ffffff;
+  color: #000000;
   font-family: "Poppins-SemiBold", Helvetica;
   font-size: 28px;
   font-weight: 600;
@@ -146,7 +146,7 @@ export const P = styled.p`
 `;
 
 export const TextWrapper5 = styled.div`
-  color: #ffffff;
+  color: #000000;
   font-family: "Poppins-SemiBold", Helvetica;
   font-size: 28px;
   font-weight: 600;
@@ -160,7 +160,7 @@ export const TextWrapper5 = styled.div`
 `;
 
 export const TextWrapper6 = styled.div`
-  color: #ffffff;
+  color: #000000;
   font-family: "Poppins-SemiBold", Helvetica;
   font-size: 28px;
   font-weight: 600;
@@ -174,7 +174,7 @@ export const TextWrapper6 = styled.div`
 `;
 
 export const TextWrapper7 = styled.div`
-  color: #ffffff;
+  color: #000000;
   font-family: "Poppins-SemiBold", Helvetica;
   font-size: 28px;
   font-weight: 600;
@@ -188,7 +188,7 @@ export const TextWrapper7 = styled.div`
 `;
 
 export const TextWrapper8 = styled.div`
-  color: #ffffff;
+  color: #000000;
   font-family: "Poppins-SemiBold", Helvetica;
   font-size: 64px;
   font-weight: 600;
