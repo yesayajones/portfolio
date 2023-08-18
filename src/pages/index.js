@@ -11,6 +11,7 @@ import Intro from '../components/Intro/Intro';
 //Imports the Layout and Section components
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
+import New from '../components/New/New';
 
 //Defines a function component  Home that returns a Layout component with several child components.
 const Home = () => {
@@ -29,9 +30,7 @@ const Home = () => {
 					<BgAnimation />
 				</Section>
 				<Projects />
-				{/* <Stack /> */}
 				<Technologies />
-				<Timeline />
 				<Acomplishments />
 			</Layout>
 		</>
