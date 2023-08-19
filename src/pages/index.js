@@ -6,12 +6,10 @@ import Hero from '../components/Hero/Hero';
 import Projects from '../components/Projects/Projects';
 import { Stack } from '../components/Stack/Stack';
 import Technologies from '../components/Technologies/Technologies';
-import Timeline from '../components/TimeLine/TimeLine';
 import Intro from '../components/Intro/Intro';
 //Imports the Layout and Section components
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
-import New from '../components/New/New';
 
 //Defines a function component  Home that returns a Layout component with several child components.
 const Home = () => {
@@ -25,10 +23,10 @@ const Home = () => {
 
 			<Layout>
 				<Intro />
-				<Section grid>
+				{/* <Section grid>
 					<Hero />
 					<BgAnimation />
-				</Section>
+				</Section> */}
 				<Projects />
 				<Technologies />
 				<Acomplishments />
