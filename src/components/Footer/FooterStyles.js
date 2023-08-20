@@ -6,6 +6,9 @@ export const FooterWrapper = styled.section`
 	padding: 2rem 48px 40px;
 	margin: 1rem auto;
 	box-sizing: content-box;
+	display: Flex;
+
+	
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: 0 16px 48px;
@@ -46,16 +49,22 @@ export const SocialIconsContainer = styled.div`
 	max-width: 1040px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center; // add this line to center the components horizontally
+	width: 100%; // add this line to make the container full width
+	margin: 0 auto; // add this line to center the container horizontally
+	flex: 1;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		width: 100%;
 		flex-direction: column;
+		align-items: center;
 	}
 `;
 
@@ -100,7 +109,8 @@ export const Slogan = styled.p`
 
 export const SocialContainer = styled.div`
 	display: flex;
-	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		justify-content: center;
@@ -114,20 +124,22 @@ export const LinkList = styled.ul`
 	display: grid;
 	grid-template-columns: repeat(3, minmax(85px, 220px));
 	gap: 40px;
-	padding: 40px 0 28px;
+	padding: 0 28px;
+	justify-content: space-between;
+	flex: 2;
 
 	@media ${(props) => props.theme.breakpoints.lg} {
-		padding: 32px 0 16px;
+		padding:  0 16px;
 	}
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
-		padding: 32px 0 16px;
+		padding:  0 16px;
 		gap: 16px;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
-		padding: 32px 4px 16px;
+		padding: 0 4px 16px;
 		gap: 5px;
 	}
 `;

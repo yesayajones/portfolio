@@ -1,4 +1,7 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { FaLink } from 'react-icons/fa';
+
 
 import {
 	BlogCard,
@@ -35,16 +38,17 @@ const Projects = () => (
 						</TitleContent>
 						<CardInfo>{description}</CardInfo>
 						<div>
-							<TitleContent>Stack</TitleContent>
 							<TagList>
-								{tags.map((tag, i) => (
-									<Tag key={i}>{tag}</Tag>
-								))}
+								{tags}
 							</TagList>
 						</div>
 						<UtilityList>
-							<ExternalLinks href={visit}>Code</ExternalLinks>
-							<ExternalLinks href={source}>Sources</ExternalLinks>
+						<ExternalLinks href={visit}>
+							<FaLink /> Live Preview
+						</ExternalLinks>
+						<ExternalLinks href={source}>
+							<FaGithub /> View Code
+						</ExternalLinks>
 						</UtilityList>
 					</BlogCard>
 				)

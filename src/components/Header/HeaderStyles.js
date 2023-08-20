@@ -126,7 +126,7 @@ export const SocialIcons = styled.a`
 	border-radius: 50px;
 	padding: 8px;
 	&:hover {
-		transform: scale(1.2);
+		// transform: scale(1.2);
 		cursor: pointer;
 	}
 `;

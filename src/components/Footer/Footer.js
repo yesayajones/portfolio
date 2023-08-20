@@ -3,13 +3,11 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import {
-	CompanyContainer,
 	FooterWrapper,
 	LinkColumn,
 	LinkItem,
 	LinkList,
 	LinkTitle,
-	Slogan,
 	SocialContainer,
 	SocialIconsContainer,
 } from './FooterStyles';
@@ -30,9 +28,6 @@ const Footer = () => {
 				</LinkColumn>
 			</LinkList>
 			<SocialIconsContainer>
-				<CompanyContainer>
-					<Slogan> Building amazing websites one at a time </Slogan>
-				</CompanyContainer>
 				<SocialContainer>
 					<SocialIcons href='https://github.com/yesayajones'>
 						<AiFillGithub size='3rem' />

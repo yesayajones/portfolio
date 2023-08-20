@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 dummy.js
+jokes.css
 
 # testing
 /coverage
