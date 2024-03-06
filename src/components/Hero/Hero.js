@@ -17,7 +17,7 @@ const Hero = (props) => (
 			</SectionTitle>
 			<SectionText>
 				I am a front-end web developer with React experience based in Zimbabwe.
-				I offer differenct front-end development services.
+				I offer differenct front-end development services and some back-end.
 			</SectionText>
 			<Button onClick={() => (window.location = 'https://google.com')}>
 				Learn More
