@@ -47,9 +47,9 @@ export const Container = styled.div`
 
 export const Title = styled.span`
 	color: black !important;
-	font-size: 40px;
-	font-family: 'Poppins';
-	font-weight: 700;
+	font-size: 35px;
+	// font-family: 'Poppins';
+	font-weight: 400;
 	line-height: 70px;
 	word-wrap: break-word;
 	text-align: left;
@@ -57,9 +57,9 @@ export const Title = styled.span`
 
 export const Name = styled.span`
 	color: black !important;
-	font-size: 40px;
-	font-family: 'Poppins';
-	font-weight: 700;
+	font-size: 35px;
+	// font-family: 'Poppins';
+	font-weight: 400;
 	line-height: 70px;
 	word-wrap: break-word;
 `;
@@ -67,10 +67,12 @@ export const Name = styled.span`
 export const Description = styled.span`
 	color: #ff7067;
 	font-size: 56px;
-	font-family: 'Poppins';
-	font-weight: 700;
+	// font-family: 'Poppins';
+	font-weight: 400;
 	line-height: 70px;
 	word-wrap: break-word;
+	font-style: italic;
+	
 `;
 
 //Button styling
@@ -88,6 +90,7 @@ export const Button = styled.button`
 	margin: 15% 2px 4px;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
+	margin-bottom: 10%;
 
 	&:hover {
 		background-color: #3e8e41;
