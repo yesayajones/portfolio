@@ -60,7 +60,7 @@ const Intro = (props) => (
 				<img
 					style={{
 						width: 528.15,
-						height: 691.29,
+						height: 721.29,
 						left: 75.87,
 						top: 0,
 						position: 'absolute',
